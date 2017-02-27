@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQ HTML th optional inputs</title>
+	<link rel="stylesheet" href="css/style_jQ_HTML_th_optional_inputs.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<form onsubmit="return false">
+		<label>1-ый человек</label>
+		<div>
+			<input type="text" id="name1" placeholder="Имя">
+			<input type="text" id="surname1" placeholder="Фамилия">
+			<input type="number" id="age" placeholder="Возраст">
+			<input type="text" id="fullName1" placeholder="ФИО">
+		</div>
+		<label>2-ой человек</label>
+		<div>
+			<input type="text" id="name2" placeholder="Имя">
+			<input type="text" id="surname2" placeholder="Фамилия">
+			<input type="text" id="fathername1" placeholder="Отчество">
+			<input type="text" id="fullName2" placeholder="ФИО">
+		</div>
+		<label>3-ий человек</label>
+		<div>
+			<input type="text" id="name3" placeholder="Имя">
+			<input type="text" id="surname3" placeholder="Фамилия">
+
+			<label> Пол: </label>
+			<input type="radio" name="sex" value="female" id="female" checked>
+			<label for="female"> Женский </label>
+			
+			<input type="radio" name="sex" value="male" id="male">
+			<label for="male"> Мужской </label>
+			
+			<input type="text" id="fullName3" placeholder="ФИО">
+		</div>
+		<label>4-ый человек</label>
+		<div>
+			<input type="text" id="name4" placeholder="Имя">
+			<input type="text" id="surname4" placeholder="Фамилия">
+			<label> Знак зодиака: </label>
+			<select id="zodiacSign">
+				<option> Овен </option>
+				<option> Телец </option>
+				<option> Близнецы </option>
+				<option> Рак </option>
+				<option> Лев </option>
+				<option> Дева </option>
+				<option> Весы </option>
+				<option> Скорпион </option>
+				<option> Змееносец </option>
+				<option> Стрелец </option>
+				<option> Козерог </option>
+				<option> Водолей </option>
+				<option> Рыбы </option>
+			</select>
+			<input type="text" id="fullName4" placeholder="ФИО">
+		</div>
+		<label>5-ый человек</label>
+		<div>
+			<input type="text" id="name5" placeholder="Имя">
+			<input type="text" id="surname5" placeholder="Фамилия">
+			<input type="text" id="fathername2" placeholder="Отчество">
+		</div>
+		<input type="submit" value="Таблица" id="save">
+	</form>
+</body>
+<script src="script/script_jQ_HTML_th_optional_inputs.js"></script>
+</html>
