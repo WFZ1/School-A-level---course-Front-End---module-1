@@ -1,0 +1,94 @@
+div#wrapper {
+	width: 400px;
+	height: 200px;
+	background-color: #34495E;
+	background-image: url(../images/2.jpg);
+	background-size: cover;
+	color: #fff;
+	box-shadow: -2px -2px 10px 3px black;
+	border-radius: 2px;
+	padding: 10px;
+	margin: 25px 0 0 30px;
+}
+
+/* Начало блока columnL */
+
+#columnL {
+	width: 130px;
+	float: left;
+}
+
+#columnL select {
+	width: 130px;
+	font-family: 'Arial Black';
+	background-color: #34495E;
+	color: white;
+	border: none;
+	border-radius: 2px;
+	display: block;	
+	margin-bottom: 5px;
+}
+
+#columnL span {
+	display: block;
+	text-align: center;
+}
+
+#columnL #date {
+	font-family: 'Century Gothic';
+	margin: 10px 0 4px;
+}
+
+#columnL #aura {
+	font-family: 'Comic Sans MS';
+	font-size: 13px;
+}
+
+#columnL #highLowTemp {
+	width: 85px;
+	height: 20px;
+	font-family: 'Courier New';
+	position: relative;
+	margin: 5px 0 2px 21px;
+}
+
+#columnL #highLowTemp #high {
+	position: absolute;
+	left: 0;
+}
+
+#columnL #highLowTemp #low {
+	position: absolute;
+	right: 0;
+}
+
+#columnL #temp {
+	font-size: 46px;
+	font-family: 'Trebuchet MS';
+	background-color: rgba(0,0,0,0.2);
+	box-shadow: 0 0 10px 1px white;
+}
+
+/* Конец блока columnL */
+
+/* Начало блока columnR */
+
+#columnR {
+	margin-left: 150px;
+}
+
+#columnR p {
+	background-color: rgba(0,0,0,0.5);
+	text-align: center;
+	font-family: 'Verdana';
+	font-weight: bold;
+	border-radius: 3px 3px 0 0;
+	margin: 0 0 5px;
+}
+
+#columnR table {
+	width: 100%;
+	background-color: rgba(0,0,0,0.5);
+	border-radius: 0 0 5px 5px;
+	padding: 4px;
+}
