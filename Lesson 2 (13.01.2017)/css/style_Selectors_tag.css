@@ -1,0 +1,11 @@
+div {
+	color: red;
+}
+
+div div {
+	color: blue;
+}
+
+div div div {
+	color: green;
+}

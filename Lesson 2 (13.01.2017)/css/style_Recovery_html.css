@@ -1,0 +1,15 @@
+section article {
+	color: blue;
+}
+
+section > article + article p {
+	color: red;
+}
+
+section > article + article p:nth-child(2) {
+	color: green;
+}
+
+section > article + article p:last-child {
+	color: cyan;
+}

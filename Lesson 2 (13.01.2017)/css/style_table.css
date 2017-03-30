@@ -1,0 +1,32 @@
+table {
+	border-collapse: collapse; /* убираем пустые промежутки между ячейками */
+} 
+
+th, td {
+	border: 1px solid black;
+	padding: 7px;
+	width: 105px;
+	font-size: 14.6px;
+}
+
+/* Не нуждаються в thead и tbody */
+
+/*tr:first-child {  первый ряд таблицы
+	background-color: #444444;
+	color: #FFFFFF;
+}
+
+tr:nth-child(2n+3) {  3-ий и 5-ый ряд таблицы
+	background-color: #EFEFEF;
+}*/
+
+/* Или так с thead и tbody */
+
+thead {
+	background-color: #444444;
+	color: #FFFFFF;
+}
+
+tbody tr:nth-child(even) {
+	background-color: #EFEFEF;
+}

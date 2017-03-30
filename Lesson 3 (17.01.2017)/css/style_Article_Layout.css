@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+	background-color: #F2F2F2;
+	margin: 0;
+}
+
+main {
+	width: 750px;
+	max-width: 100%;
+	margin: auto;
+}
+
+img {
+	max-width: 100%;
+	transition-property: opacity; /* название свойства, к которому будет применен эффект перехода */
+	transition-duration: 0.3s; /* задаёт промежуток времени, в течение которого должен осуществляться переход */
+	transition-timing-function: linear; /* скорость перехода объекта от одного значения к другому */
+	/*outline: 1px solid green;*/
+}
+
+img:hover {
+	opacity: 0.8;
+}
+
+article {
+	background-color: #fff;
+	border: 1px solid #dadada;
+	color: #6B6B6B;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	padding: 45px 50px;
+	margin-bottom: 50px;
+	overflow: hidden;
+	/*outline: 1px solid red;*/
+}
+
+header h1 {
+	font-family: 'Roboto Slab', serif;
+	font-size: 28px;
+	font-weight: 600; /* полужирное начертание */
+	margin: 0 0 30px;
+}
+
+header h1 a {
+	color: #444444;
+	text-decoration: none;
+	transition: color 0.3s linear;
+}
+
+header h1 a:hover {
+	color: #DA4453;
+}
+
+ul {
+	font-size: 13px;
+	list-style: none; /* убираем стандарт. маркер */
+	padding: 0;
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+
+ul li {
+	float: left;
+	padding: 0 5px;
+}
+
+ul li i {
+	padding-right: 2px;
+}
+
+ul li a {
+	color: #6B6B6B;
+	text-decoration: none;
+}
+
+article .readmore {
+	background-color: #DA4453;
+	border: 1px solid #DA4453;
+	border-radius: 4px;
+	color: #fff;
+	font-size: 13px;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: inline-block;
+	float: right;
+	transition: background 0.3s linear;
+	padding: 11px 13px;
+}
+
+article .readmore:hover {
+	background-color: #000;
+	border: 1px solid #000;
+}

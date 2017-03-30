@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #f2f2f2;
+	color: #6b6b6b;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+}
+
+/* Начало блока header */
+
+#H_wrapper {
+	width: 100%;
+	height: 75px;
+	background-color: #363636;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+}
+
+#H_wrapper header {
+	max-width: 1170px;
+	margin: auto;
+	line-height: 75px;
+}
+
+#H_wrapper header h1 {
+	font-family: 'Roboto Slab', serif;
+	font-size: 20px;
+	font-weight: 600; /* полужирное начертание */
+	float: left;
+	margin: 0;
+}
+
+#H_wrapper header h1 a {
+	color: #dadada;
+	text-decoration: none;
+}
+
+#H_wrapper header nav {
+	float: right;
+}
+
+#H_wrapper header nav ul {
+	list-style: none; /* убираем стандарт. маркер */
+	padding: 0;
+	margin: 0;
+}
+
+#H_wrapper header nav ul li {
+	font-size: 12px;
+	float: left;
+	padding-left: 30px;
+}
+
+#H_wrapper header nav ul li a {
+	color: #F5F7FA;
+	text-decoration: none;
+	transition: color 0.3s linear;
+}
+
+#H_wrapper header nav ul li a:hover {
+	color: #da4453;
+}
+
+#H_wrapper header nav ul li:first-child a {
+	color: #da4453;
+}
+
+/* Конец блока header */
+
+/* Начало блока slider`a */
+
+#S_wrapper {
+	width: 100%;
+	height: 425px;
+	background-image: url(../images/fon.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: relative;
+	top: 75px;
+	margin-bottom: 115px;
+}
+
+#S_wrapper div {
+	max-width: 1170px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 50px;
+	margin: auto;
+}
+
+#S_wrapper div h1 {
+	background-color: rgba(218, 68, 83, 0.7);
+	color: #fff;
+	font-family: 'Roboto Slab', serif;
+	font-size: 24px;
+	font-weight: 600;
+	display: inline-block;
+	padding: 12px 20px;
+	margin: 0;
+}
+
+#S_wrapper div p {
+	max-width: 600px;
+	background-color: rgba(59, 59, 59, 0.8);
+	color: #dddddd;
+	padding: 12px 20px;
+	margin: 0;
+}
+
+/* Конец блока slider`a */
+
+/* Начало блока main */
+
+main {
+	max-width: 1170px;
+	margin: auto;
+	overflow: hidden;
+}
+
+/* Начало блока section */
+
+section {
+	max-width: 750px;
+	float: left;
+	margin: 0 15px 90px;
+}
+
+section img {
+	max-width: 100%;
+	transition-property: opacity;
+	transition-duration: 0.3s;
+	transition-timing-function: linear;
+	vertical-align: middle;
+}
+
+section img:hover {
+	opacity: 0.8;
+}
+
+/* Начало блока article */
+
+article {
+	background-color: #fff;
+	border: 1px solid #dadada;
+	color: #6B6B6B;
+	font-size: 14px;
+	padding: 45px 50px;
+	overflow: hidden;
+}
+
+article header h1 {
+	font-family: 'Roboto Slab', serif;
+	font-size: 28px;
+	font-weight: 600;
+	margin: 0 0 30px;
+}
+
+article header h1 a {
+	color: #444444;
+	text-decoration: none;
+	transition: color 0.3s linear;
+}
+
+article header h1 a:hover {
+	color: #DA4453;
+}
+
+article header ul {
+	font-size: 13px;
+	list-style: none;
+	padding: 0;
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+
+article header ul li {
+	float: left;
+	padding: 0 5px;
+}
+
+article header ul li i {
+	padding-right: 2px;
+}
+
+article header ul li a {
+	color: #6B6B6B;
+	text-decoration: none;
+}
+
+article p {
+	line-height: 1.5;
+}
+
+article .readmore {
+	background-color: #DA4453;
+	border: 1px solid #DA4453;
+	border-radius: 4px;
+	color: #fff;
+	font-size: 13px;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: inline-block;
+	float: right;
+	transition: background 0.3s linear;
+	padding: 11px 13px;
+}
+
+article .readmore:hover {
+	background-color: #000;
+	border: 1px solid #000;
+}
+
+/* Конец блоков article и section */
+
+/* Начало блока aside */
+
+aside {
+	max-width: 360px;
+	background-color: #fff;
+	border: 1px solid #dadada;
+	border-radius: 4px;
+	padding: 30px;
+	margin: 0 15px;
+	float: right;
+}
+
+aside div {
+	margin-bottom: 50px;
+}
+
+aside div h2 {
+	font-family: 'Roboto Slab', serif;
+	font-size: 14px;
+	font-weight: 600;
+	color: #636467;
+	margin: 0 0 25px;
+}
+
+aside div ul {
+	font-size: 18px;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+aside div ul li {
+	float: left;
+	margin: 0 10px 5px 0;
+}
+
+aside div ul li a {
+	width: 40px;
+	height: 40px;
+	background-color: #c1c0c0;
+	color: #fff;
+	border-radius: 3px;
+	text-align: center;
+	line-height: 40px;
+	display: inline-block;
+	transition: background-color 0.3s linear;
+}
+
+aside div ul li:first-child a:hover {
+	background-color: #55acee;
+}
+
+aside div ul li:nth-child(2) a:hover {
+	background-color: #4265b9;
+}
+
+aside div ul li:nth-child(3) a:hover {
+	background-color: #df3333;
+}
+
+aside div ul li:nth-child(4) a:hover {
+	background-color: #d62408;
+}
+
+aside div ul li:nth-child(5) a:hover {
+	background-color: #5b8bb4;
+}
+
+aside div p {
+	font-size: 14px;
+	color: #c1c0c0;
+	border-bottom: 1px solid #f2f2f2;
+	padding-bottom: 10px;
+	margin: 0 0 10px;
+}
+
+aside div p span {
+	font-weight: bold;
+}
+
+aside div:last-child {
+	margin-bottom: 0;
+}
+
+aside div:last-child a {
+	font-size: 12px;
+	background-color: #dadada;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 3px;
+	display: inline-block;
+	padding: 6px 7px;
+	margin-bottom: 4px;
+	transition: background-color 0.3s linear;
+}
+
+aside div:last-child a:hover {
+	background-color: #da4453;
+}
+
+/* Конец блоков aside и main */
+
+/* Начало блока footer */
+
+#F_wrapper {
+	width: 100%;
+	background-color: #1F1F1F;
+	padding: 10px 0;
+}
+
+#F_wrapper footer {
+	max-width: 1170px;
+	margin: auto;
+	overflow: hidden;
+}
+
+#F_wrapper footer nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#F_wrapper footer nav ul li {
+	font-size: 12px;
+	float: left;
+	padding: 10px 15px;
+}
+
+#F_wrapper footer nav ul li a {
+	color: #DADADA;
+	text-decoration: none;
+	transition: color 0.3s linear;
+}
+
+#F_wrapper footer nav ul li a:hover {
+	color: #fff;
+}
+
+#F_wrapper footer div {
+	font-size: 12px;
+	color: #999;
+	line-height: 37px;
+	float: right;
+}
+
+#F_wrapper footer div span {
+	color: #DADADA;
+}
+
+/* Конец блока footer */

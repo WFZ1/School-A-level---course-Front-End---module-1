@@ -1,0 +1,29 @@
+#d1, #d2 {
+	width: 30%;
+	height: 100px;
+	background-color: gray;
+	margin: 5px;
+	float: left;
+}
+
+/* Первый способ */
+
+/*#d0 {
+	overflow: hidden;
+}*/
+
+/* Второй способ */
+
+/*div.clear {
+	clear: left;
+}*/
+
+/* Третий способ */
+
+/*#d0:after {
+	 content: "abc";
+	 clear: left;
+	 visibility: hidden;
+	 display: block;
+	 height: 0;
+ }*/

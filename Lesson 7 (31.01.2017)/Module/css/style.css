@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif:400,400i');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #2D2D2D;
+	color: #656565;
+	font-family: 'Droid Serif', serif;
+	font-size: 16px;
+	line-height: 1.5;
+	margin: 0;
+}
+
+body #wrapper {
+	width: 1175px;
+	background-color: #fff;
+	overflow: hidden;
+	margin: auto;
+}
+
+body h1 {
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* Начало блока header */
+
+header {
+	padding: 24px 75px;
+}
+
+header h1 {
+	font-size: 34px;
+	margin: 0;
+}
+
+header h1 a {
+	color: #252525;
+	text-decoration: none;
+}
+
+header h1 a:hover {
+	color: #5B5B5B;
+	text-decoration: underline;
+	text-decoration-color: #DEDEDE;
+}
+
+header span {
+	color: #9A9A9A;
+	font-size: 18px;
+	font-style: italic;
+}
+
+/* Конец блока header */
+
+/* Начало блока slider`a */
+
+img#slider {
+	width: 100%;
+	height: 400px;
+}
+
+/* Конец блока slider`a */
+
+/* Начало блока main */
+
+main {
+	width: calc(100% / 3 * 2);
+}
+
+/* Начало блока section */
+
+main section {
+	padding: 48px 75px;
+	float: left;
+}
+
+/* Начало блока article */
+
+main section article {
+	border-bottom: 1px solid #e3e3e3;
+	padding-bottom: 24px;
+	margin-bottom: 48px;
+}
+
+main section article:last-child {
+	border-bottom: none;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+article img {
+	width: 100%;
+	opacity: 0.85;
+	vertical-align: middle; /* убирает пространство под картинкой */
+	margin-bottom: 25px;
+	transition: opacity 0.5s linear;
+}
+
+article img:hover {
+	opacity: 1;
+}
+
+#wrapper article header {
+	padding: 0;
+}
+
+article header h1 {
+	font-size: 32px;
+}
+
+article header h1 a {
+	transition: all 0.5s linear;
+}
+
+article header h1 a:hover {
+	color: #CC4A00;
+	text-decoration: underline;
+}
+
+article header ul {
+	list-style: none;
+	padding: 0;
+	overflow: hidden;
+}
+
+article header ul li {
+	float: left;
+	padding-right: 10px;
+	color: #CC4A00;
+}
+
+article header ul li:nth-child(2) {
+	color: #7F7F7F;
+}
+
+article header ul li a {
+	color: #CC4A00;
+	text-decoration: none;
+}
+
+article p a.readmore {
+	text-decoration: none;
+	color: #CC4A00;
+}
+
+/* Конец блоков article, section и main */
+
+/* Начало блока aside */
+
+aside {
+	margin-top: 48px;
+	width: calc(100% / 3 - 75px);
+	float: left;
+}
+
+aside div {
+	margin-bottom: 48px;
+}
+
+aside div h1 {
+	font-size: 13px;
+	color: #fff;
+	border-bottom: 2px solid #CC4A00;
+	margin: 0 0 24px;
+}
+
+aside div h1 span {
+	background-color: #CC4A00;
+	display: inline-block;
+	padding: 12px 24px 10px;
+}
+
+aside div select {
+	width: 100%;
+	background-color: #f3f3f3;
+	border: 1px solid #e3e3e3;
+	color: #858585;
+	padding: 7px;
+}
+
+aside div:nth-child(2) div a {
+	color: #CC4A00;
+	text-decoration: none;
+}
+
+aside div:last-child ul {
+	margin: 0;
+	padding-left: 20px
+}
+
+aside div:last-child ul li a {
+	color: #CC4A00;
+	font-family: 'Open Sans', sans-serif;
+	text-decoration: none;
+}
+
+/* Конец блоков aside */

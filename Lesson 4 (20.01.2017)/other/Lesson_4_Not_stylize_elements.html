@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Нестилизуемые элементы(хитрости)</title>
+	<link rel="stylesheet" href="css/style_Not_stylize_elements.css">
+</head>
+<body>
+	<input type="checkbox" id="checkbox1" class="styled" checked> <label for="checkbox1"> CheckBox 1 </label>
+	<input type="checkbox" id="checkbox2" class="styled"> <label for="checkbox2"> CheckBox 2 </label>
+	<input type="radio" id="radio1" class="styled" name="radios"> <label for="radio1"> Radio 1 </label>
+	<input type="radio" id="radio2" class="styled" name="radios"> <label for="radio2"> Radio 2 </label>
+	<hr>
+	<input type="checkbox" id="switcher1" class="switcher"> <label for="switcher1"></label>
+	<input type="checkbox" id="switcher2" class="switcher" checked> <label for="switcher2"></label>
+	<hr>
+
+	<!-- Select - невозможно застилизовать с помощью css, можно через JS фреймворки -->
+
+	<select>
+		<option value=""> Kyiv </option>
+		<option value=""> Kharkiv </option>
+		<option value=""> Lviv </option>
+		<option value=""> Odessa </option>
+		<option value=""> Dnepr </option>
+	</select>
+</body>
+</html>

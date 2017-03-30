@@ -1,0 +1,93 @@
+#flexbox {
+	display: flex;
+	flex-wrap: wrap; /* элем. располагаються в несколько рядов */
+}
+
+.flex {
+	color: #fff;
+	font-family: Arial, sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#flex1 {
+	flex-basis: calc(25% - 11.25px); /* отнимаем ту область, которая станет отступом в другом блока, для правильного распределения ширины */
+	line-height: 225px;
+}
+
+#flex2 {
+	display: flex;
+	flex-basis: calc(75% + 11.25px);
+	line-height: 225px;
+}
+
+#flex3 {
+	display: flex;
+	flex-basis: 100%;
+	margin-top: 15px;
+	line-height: 200px;
+}
+
+.flex div {
+	background-color: #CFE2F3;
+	/*outline: 1px solid red;*/
+}
+
+#flex2 div {
+	flex-basis: calc(100% / 3);
+	margin-left: 15px;
+}
+
+#flex3 div {
+	flex-basis: 50%;
+	margin-left: 15px;
+}
+
+#flex3 div:first-child {
+	margin-left: 0;
+}
+
+@media all and (max-width: 780px) {
+	#flex1 {
+		flex-basis: calc(50% - 7.5px);
+		line-height: 200px;
+	}
+
+	#flex2 {
+		flex-direction: column-reverse;
+		flex-basis: calc(50% + 7.5px);
+		line-height: 57px;
+	}
+
+	#flex3 {
+		flex-direction: row-reverse;
+	}
+
+	#flex2 div {
+		margin-bottom: 15px;
+	}
+
+	#flex2 div:first-child {
+		margin-bottom: 0;
+	}
+
+	#flex3 div:first-child {
+		margin-left: 15px;
+	}
+
+	#flex3 div:last-child {
+		margin-left: 0;
+	}
+}
+
+@media all and (max-width: 480px) {
+	#flexbox, .flex {
+		display: block !important;
+		line-height: normal !important;
+	}
+
+	.flex div {
+		margin: 0 0 15px 0 !important;
+	}
+}

@@ -1,0 +1,103 @@
+body {
+	margin: 10px 100px;
+}
+
+/* Стилизация CheckBox`a */
+
+input[type=checkbox].styled {
+	display: none; /* временно удаляет элемент из документа */
+}
+
+input[type=checkbox].styled + label::before {
+	width: 15px;
+	height: 15px;
+	content: '';
+	display: inline-block;
+	border: 2px solid #889DBA;
+	color: #fff;
+	text-align: center;
+	vertical-align: top;
+	line-height: 1;
+	transition: all 0.3s;
+	margin-right: 5px;
+}
+
+input[type=checkbox].styled + label:hover::before {
+	border-color: #68CC82;
+}
+
+input[type=checkbox].styled:checked + label::before {
+	content: '\2714';
+	background: #68CC82;
+	border-color: #68CC82
+}
+
+/* Стилизация Radio кнопки */
+
+input[type=radio].styled {
+	display: none;
+}
+
+input[type=radio].styled + label::before {
+	width: 17px;
+	height: 17px;
+	content: '';
+	display: inline-block;
+	border: 2px solid #889DBA;
+	font-size: 47px;
+	color: #fff;
+	text-align: center;
+	vertical-align: top;
+	line-height: 0.3;
+	border-radius: 50%;
+	transition: all 0.3s;
+	margin-right: 5px;
+}
+
+input[type=radio].styled + label:hover::before {
+	border-color: #68CC82;
+}
+
+input[type=radio].styled:checked + label::before {
+	content: '\2022';
+	background: #68CC82;
+	border-color: #68CC82;
+}
+
+/* Стилизация CheckBox`a, стильный переключатель */
+
+input[type=checkbox].switcher {
+	display: none;
+}
+
+input[type=checkbox].switcher + label {
+	width: 50px;
+	height: 20px;
+	display: inline-block;
+	background: #DCDCDC;
+	border-radius: 10px;
+	position: relative;
+	transition: all 0.8s linear;
+}
+
+input[type=checkbox].switcher + label::before {
+	width: 20px;
+	height: 20px;
+	content: '';
+	display: inline-block;
+	background: #889DBA;
+	border-radius: 50%;
+	position: absolute;
+	left: 0%;
+	transition: all 0.3s linear;
+}
+
+input[type=checkbox].switcher:checked + label {
+	background: #A8FFC1;
+}
+
+input[type=checkbox].switcher:checked + label::before {
+	content: '';
+	background: #68CC82;
+	left: calc(100% - 20px)
+}

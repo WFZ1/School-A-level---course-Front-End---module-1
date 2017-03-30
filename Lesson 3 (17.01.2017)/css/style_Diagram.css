@@ -1,0 +1,58 @@
+#diagram {
+	display: flex;
+	align-items: flex-end; /* вертикальное выравнивание елем. */
+	width: 360px;
+	margin: auto;
+	/*outline: 1px solid black;*/
+}
+
+#diagram div {
+	text-align: center;
+   	flex-basis: 45px;
+} 
+
+#diagram span {
+ 	display: inline-block;
+  	width: 100%;
+  	background-color: #fff;
+}
+
+#diagram div:first-child {
+	background-color: #DE9797;
+	height: 88px;
+}
+
+#diagram div:nth-child(2) {
+	background-color: #979ADE;
+	height: 68px;
+}
+
+#diagram div:nth-child(3) {
+	background-color: #97DE99;
+	height: 48px;
+}
+
+#diagram div:nth-child(4) {
+	background-color: #DDDE97;
+	height: 118px;
+}
+
+#diagram div:nth-child(5) {
+	background-color: #DEC997;
+	height: 108px;
+}
+
+#diagram div:nth-child(6) {
+	background-color: #97DEDA;
+	height: 78px;
+}
+
+#diagram div:nth-child(7) {
+	background-color: #DE97D8;
+	height: 28px;
+}	
+
+#diagram div:last-child {
+	background-color: #B097DE;
+	height: 53px;
+}

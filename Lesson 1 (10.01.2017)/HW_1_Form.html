@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Элементы формы</title>
+</head>
+<body>
+    <form method="POST" name="form" autocomplete="on">
+    	<div>
+            <label> User name: </label>
+            <input type="text" name="name" maxlength="16" size="17" placeholder="Введите свой Логин" autofocus required>
+        </div>
+        <br>
+    	<div>
+            <label> E-mail: </label>
+            <input type="email" name="email" maxlength="30" size="22" placeholder="Введите свою Почту" required>
+        </div>
+        <br>
+        <div>
+    	   <label> Password: </label>
+    	   <input type="password" name="password" maxlength="16" size="19" placeholder="Введите свой Пароль" pattern=".{6,}" required>
+        </div>
+        <br>
+    	<div>
+    		Sex:
+    		<input type="radio" name="sex" id="male" value="male" checked> <label for="male"> Male </label>
+    		<input type="radio" name="sex" id="female" value="female"> <label for="female"> Female </label>
+    	</div>
+        <br>
+    	<div>
+            <label> Age: </label>
+    		<input type="number" name="number" value="20" min="1" max="100" step="1" required>
+        </div>
+        <br>
+        <div>
+    		<input type="checkbox" name="married" id="married"> <label for="married"> Married </label>
+    	</div>
+        <br>
+    	<div>
+            <label> Phone: </label>
+            <input type="tel" name="phone" placeholder="+38 (000) 000-00-00" size="18" pattern="\+38 \(\d{3}\) \d{3}-\d{2}-\d{2}" required>
+        </div>
+        <br>
+    	<div>
+            <label> City: </label>
+    		<select name="city">
+    			<option value="Vinnytsia"> Vinnytsia </option>
+    			<option value="Dnipropetrovsk"> Dnipropetrovsk </option>
+    			<option value="Donetsk"> Donetsk </option>
+    			<option value="Zhytomyr"> Zhytomyr </option>
+    			<option value="Zaporizhzhia"> Zaporizhzhia </option>
+    			<option value="Ivano-Frankivsk"> Ivano-Frankivsk </option>
+    			<option value="Kyiv"> Kyiv </option>
+    			<option value="Kirovohrad" selected> Kirovohrad </option>
+    			<option value="Luhansk"> Luhansk </option>
+    			<option value="Lutsk"> Lutsk </option>
+    			<option value="Lviv"> Lviv </option>
+    			<option value="Mykolaiv"> Mykolaiv </option>
+    			<option value="Odesa"> Odesa </option>
+    			<option value="Poltava"> Poltava </option>
+    			<option value="Rivne"> Rivne </option>
+    			<optgroup label="Crimea">
+    				<option value="Sevastopol"> Sevastopol </option>
+    				<option value="Simferopol"> Simferopol </option>
+    			</optgroup>
+    			<option value="Sumy"> Sumy </option>
+    			<option value="Ternopil"> Ternopil </option>
+    			<option value="Uzhhorod"> Uzhhorod </option>
+    			<option value="Kharkiv"> Kharkiv </option>
+    			<option value="Kherson"> Kherson </option>
+    			<option value="Khmelnytskyi"> Khmelnytskyi </option>
+    			<option value="Cherkasy"> Cherkasy </option>
+    			<option value="Chernivtsi"> Chernivtsi </option>
+    			<option value="Chernihiv"> Chernihiv </option>
+    		</select>
+    	</div>
+        <br>
+    	<label> About: </label>
+        <br>
+    	<textarea name="about" cols="35" rows="7" maxlength="210" placeholder="Напишите кратко о себе"></textarea>
+    	<br>
+        <input type="submit" value="Save">
+    </form>
+</body>
+</html>

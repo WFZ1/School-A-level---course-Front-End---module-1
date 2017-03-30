@@ -1,0 +1,23 @@
+main {
+	padding: 10px;
+}
+
+section {
+	display: flex; /* oпределяет flex-контейнер */
+	padding: 10px;
+}
+
+article {
+	width: calc(100% / 4);
+	margin-right: 30px;
+}
+
+article:last-child {
+	margin-right: 0;
+}
+
+article img {
+	max-width: 97%;
+	display: block;
+	margin: auto;
+}
